@@ -1,68 +1,98 @@
-# Astro Starter Kit: Blog
+# Astro Air
 
-```sh
-npm create astro@latest -- --template blog
+A minimalism, personal blog theme for Astro.
+
+> If you find this project helpful, please consider giving it a star ⭐️
+
+[![Built with Astro](https://astro.badg.es/v1/built-with-astro/tiny.svg)](https://astro.build) [![Netlify Status](https://api.netlify.com/api/v1/badges/a4eb6e88-606d-4ea6-9a53-179e03a7e2ef/deploy-status)](https://app.netlify.com/sites/astro-air/deploys)
+
+<img style="border-radius: 10px;" src="https://cdn.jsdelivr.net/gh/sun0225SUN/astro-air/public/preview.png" alt="Astro Air">
+
+## Showcase
+
+- [Astro Air](https://astro-air.guoqi.dev)
+- [Guoqi's blog](https://blog.sunguoqi.com)
+- ...
+
+> welcome to add your own blog to the list ❤️
+
+## Features
+
+- [x] 🌓 Dark mode support
+- [x] 📱 Fully device responsive
+- [x] 🎨 Clean and minimalist design
+- [x] 📝 Markdown/MDX for content authoring
+- [x] 🏄‍♂️ SSG static rendering, SEO friendly
+- [x] 🌐 i18n support (EN/ZH)
+- [x] 🔗 Social media integration
+- [x] 📰 RSS feed & sitemap support
+- [x] 🛠️ Google analysis integration
+- [x] 💬 Commenting Integration (Twikoo)
+- [ ] 🔍 Local search functionality
+- [ ] 🎨 Enhance Transition and Animation
+- [ ] ...and more
+
+## Quick Start
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/sun0225SUN/astro-air)
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sun0225SUN/astro-air)
+
+## Configuration
+
+- Open `src/config/index.ts` and customize your site settings
+
+- Open `src/config/links.ts` and customize your site links
+
+- Open `src/config/zh(en)/about.mdx(intro.mdx、links.mdx)` and customize your pages content
+
+## Writing Content
+
+1. Create new blog posts in the `src/content/posts/` directory
+2. Use the following frontmatter template:
+
+```markdown
+---
+title: "Your Post Title"
+description: "A brief description of your post"
+pubDate: YYYY-MM-DD
+updatedDate(optional): YYYY-MM-DD
+tags(optional): ["tag1", "tag2"]
+ogImage(optional): "cover image URL"
+---
+
+Your content here...
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+## Update Theme
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+```bash
+git remote add upstream https://github.com/sun0225SUN/astro-air
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+git fetch upstream
 
-Features:
+git merge upstream/main --allow-unrelated-histories
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Contributing
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Contributions are welcome! Feel free to:
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+1. Fork the repository
+2. Create your feature branch
+3. Submit a pull request
 
-Any static assets, like images, can be placed in the `public/` directory.
+```bash
+git clone https://github.com/sun0225SUN/astro-air
 
-## 🧞 Commands
+cd astro-air
 
-All commands are run from the root of the project, from a terminal:
+pnpm install
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+pnpm dev
+```
 
-## 👀 Want to learn more?
+## License
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+This project is licensed under the MIT License - see the LICENSE file for details.
