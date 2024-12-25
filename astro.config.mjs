@@ -5,6 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://kabanblog.github.io.com',
+	site: 'https://kabanblog.github.io',
 	integrations: [mdx(), sitemap()],
 });
